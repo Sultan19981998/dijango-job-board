@@ -30,7 +30,8 @@ SECRET_KEY = 'django-insecure-_agwd25&f3#mfx!*#2hs0#r6usobc0_t-riug1frrbsi%p8umz
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['dijango-job-board-1.onrender.com']
+
 
 # Application definition
 
@@ -132,9 +133,8 @@ MEDIA_ROOT = BASE_DIR / "media"
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
-EMAIL_HOST = "smtp.gmail.com"
-EMAIL_HOST_USER = 'sultan.saif.alaamri@gmail.com'
-EMAIL_HOST_PASSWORD = 'zslotgdu uiuaxpku'
-EMAIL_USE_TLS = True
-EMAIL_PORT = 587
+EMAIL_HOST = os.environ.get('EMAIL_HOST')
+EMAIL_PORT = int(os.environ.get('EMAIL_PORT'))
+EMAIL_USE_TLS = os.environ.get('EMAIL_USE_TLS') == 'True'
+EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')

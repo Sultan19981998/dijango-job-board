@@ -1,0 +1,861 @@
+<database name="sitDatabase">
+   <group name="installationInfoGrp" grpId="0">
+      <object name="lastSavedWithSwVersion" objId="0">1160287009</object>
+      <object name="sitInstallOwner" objId="1">None specified.</object>
+      <object name="sitInstallDate" objId="2">None specified.</object>
+      <object name="sitSSPD" objId="3">None specified.</object>
+      <object name="sitName" objId="4">WO512444</object>
+      <object name="sitMode" objId="5">2</object>
+      <object name="nbDomainNames" objId="6">1</object>
+      <object name="defDomainFlag" objId="9">0</object>
+      <object name="defDomainName" objId="10">defaultDomainName</object>
+      <object name="ODUCoordinates" objId="11">3.532633e+06 4.965854e+06 1.875895e+06</object>
+      <object name="sitType" objId="12">4</object>
+      <object name="ODUAntennaSize" objId="13">89</object>
+      <object name="ODUSspaPower" objId="14">20</object>
+      <object name="ODUMaximumEirp" objId="15">740</object>
+      <object name="ODUTxMixFreq" objId="16">27600</object>
+      <object name="ODURxLHBandFreqThresh" objId="17">19000</object>
+      <object name="ODURxLBandMixFreq" objId="18">16850</object>
+      <object name="ODURxHBandMixFreq" objId="19">18050</object>
+      <object name="ODUPassword" objId="20">12345678</object>
+      <object name="ODUPresentFlag" objId="21">1</object>
+      <object name="instTxIFPowerLevel" objId="22">-14</object>
+      <object name="rcstAcqFlag" objId="23">0</object>
+      <object name="LowPowerModeFlag" objId="24">0</object>
+      <object name="ODUMeshRxLHBandFreqThresh" objId="25">11700</object>
+      <object name="ODUMeshRxLBandMixFreq" objId="26">9750</object>
+      <object name="ODUMeshRxHBandMixFreq" objId="27">10600</object>
+      <object name="MeshUTID" objId="28">0</object>
+      <object name="meshDefPolarization" objId="29">0</object>
+      <object name="insAirIfStd" objId="30">0</object>
+      <object name="ODUTx24DCFlag" objId="31">1</object>
+      <object name="gpsSitcfgEnable" objId="32">0</object>
+      <object name="acuCfgMode" objId="33">0</object>
+      <object name="ODUDeployableAntennaFlag" objId="34">0</object>
+      <object name="RL_RF_SpectralInversion" objId="35">0</object>
+      <object name="GSMBackhaulOperation" objId="36">0</object>
+      <object name="ODUMeshLNBFrequencyCompensation" objId="37">1</object>
+      <object name="flinkCrcBypassFlag" objId="38">0</object>
+      <object name="10MHzRefSrcFlag" objId="39">1</object>
+      <object name="gpsSerialPortBaudRate" objId="40">0</object>
+      <object name="10MHzRefSrcRxEDFlag" objId="41">0</object>
+      <object name="10MHzRefSrcTxEDFlag" objId="42">0</object>
+      <object name="LNBType" objId="43">0</object>
+      <object name="OduTxRefClockFreq" objId="44">1</object>
+      <object name="OduTxRefClockEnable" objId="45">1</object>
+      <object name="starSCPCEnableFlag" objId="46">0</object>
+      <table name="domainNameTbl">
+         <entry index="0">
+            <object name="domainName" objId="7">domainName</object>
+            <object name="domainNameStatus" objId="8">1</object>
+         </entry>
+      </table>
+   </group>
+   <group name="networkConfGrp" grpId="1">
+      <object name="sitEthernetDhcpMode" objId="0">0</object>
+      <object name="sitEthernetIfIpAddr" objId="1">172.15.9.1</object>
+      <object name="sitEthernetIfIpMask" objId="2">255.255.255.0</object>
+      <object name="sitSatIfOamIpAddr" objId="3">10.1.15.9</object>
+      <object name="sitSatIfOamIpMask" objId="4">255.255.255.0</object>
+      <object name="sitSatIfTrafficIpAddr" objId="5">10.2.15.9</object>
+      <object name="sitSatIfTrafficIpMask" objId="6">255.255.255.255</object>
+      <object name="callSetupRequestFlag" objId="7">0</object>
+      <object name="nbFilterPatternTblEntry" objId="8">16</object>
+      <object name="nbSitQueueTblEntry" objId="23">4</object>
+      <object name="nbIPSECServerTblEntry" objId="36">1</object>
+      <object name="autoBypassUserLogin" objId="43">1</object>
+      <object name="OAMReleaseTimeout" objId="44">0</object>
+      <object name="trafficReleaseTimeout" objId="45">0</object>
+      <object name="rlEncapsulation" objId="46">0</object>
+      <object name="ripEnableFlag" objId="47">0</object>
+      <object name="ripGatewayOption" objId="48">0</object>
+      <object name="ripSupplier" objId="49">0</object>
+      <object name="ripGateway" objId="50">0</object>
+      <object name="ripVersion" objId="51">1</object>
+      <object name="nbStaticRouteTblEntry" objId="52">128</object>
+      <object name="forwardStaticMcastFlag" objId="57">1</object>
+      <object name="ethernetBridgeFlag" objId="58">0</object>
+      <object name="hpqIpPktTimeout" objId="59">4000</object>
+      <object name="lpqIpPktTimeout" objId="60">4000</object>
+      <object name="pepEnableFlag" objId="62">0</object>
+      <object name="ipCompEnableFlag" objId="64">0</object>
+      <object name="fwEnableFlag" objId="66">0</object>
+      <object name="pimSmV2EnableFlag" objId="67">0</object>
+      <object name="ccpMode" objId="68">0</object>
+      <object name="ccpMaxNumCalls" objId="69">0</object>
+      <object name="ipTosFieldType" objId="70">0</object>
+      <object name="ipSrcUdpPortNbType" objId="71">0</object>
+      <object name="ipDstUdpPortNbType" objId="72">0</object>
+      <object name="ripServerModeFlag" objId="73">0</object>
+      <object name="oamIpPktTimeout" objId="74">2000</object>
+      <object name="ccpVideoType" objId="83">20</object>
+      <object name="sitAlternateEthIfIpAddr" objId="84">0.0.0.0</object>
+      <object name="sitAlternateEthIfIpMask" objId="85">0.0.0.0</object>
+      <object name="acmDemodEthIfIpAddr" objId="86">192.169.1.133</object>
+      <object name="acmDemodEthIfIpMask" objId="87">255.255.255.0</object>
+      <object name="acmDemodEthIfGatewayIpAddr" objId="88">0.0.0.0</object>
+      <object name="ntpEnableFlag" objId="93">0</object>
+      <object name="ntpServerIpAddr" objId="94">0.0.0.0</object>
+      <object name="nbSitEthernetTblEntry" objId="118">1</object>
+      <object name="IpManageEnableFlag" objId="119">1</object>
+      <object name="sitManageEthernetIfIpAddr" objId="120">10.10.10.10</object>
+      <object name="sitManageEthernetIfIpMask" objId="121">255.255.255.0</object>
+      <object name="httpBindAddress" objId="122">127.0.0.1</object>
+      <object name="natEnableFlag" objId="123">0</object>
+      <object name="natIpAddr" objId="124">127.0.0.1</object>
+      <object name="numOfTcpRedirectEntries" objId="125">0</object>
+      <object name="numOfUdpRedirectEntries" objId="126">0</object>
+      <object name="natPrivateNetwork" objId="133">192.168.1.1/24</object>
+      <object name="ethPortSpeedType" objId="135">0</object>
+      <object name="mgmtPortSpeedType" objId="136">0</object>
+      <object name="newWebEnableFlag" objId="137">0</object>
+      <object name="pepActAsServer" objId="138">0</object>
+      <object name="pepLicenseString" objId="139">XXXXXX</object>
+      <object name="l2tpEnableFlag" objId="140">0</object>
+      <object name="l2tpPeerAddr" objId="141">10.1.15.1</object>
+      <object name="l2tpPeerId" objId="142">0</object>
+      <object name="l2tpLocalId" objId="143">0</object>
+      <object name="bridgeEthernetIpAddr" objId="144">12.12.12.12</object>
+      <object name="bridgeEthernetIpMask" objId="145">255.255.255.0</object>
+      <object name="bridgeMTU" objId="146">1600</object>
+      <object name="l2tpLocalAddr" objId="147">10.3.15.9</object>
+      <object name="l2_protocol_flag" objId="148">2</object>
+      <object name="vxlanDstAddr" objId="149">10.1.1.1</object>
+      <object name="vxlanPeerId" objId="150">1003271</object>
+      <object name="vxlanMTU" objId="151">1438</object>
+      <object name="MCGroup" objId="152">230.3.3.3</object>
+      <object name="useSyslogFlag" objId="153">0</object>
+      <object name="remoteSyslogFlag" objId="154">0</object>
+      <object name="remoteSyslogIpAddr" objId="155">10.10.10.1</object>
+      <object name="remoteSyslogPort" objId="156">514</object>
+      <object name="syslogLogFile" objId="157"></object>
+      <table name="filterPatternTbl">
+         <entry index="0">
+            <object name="ipSrcAddr" objId="9">0.0.0.0</object>
+            <object name="ipMask" objId="10">0.0.0.0</object>
+            <object name="ipAddr" objId="11">0.0.0.0</object>
+            <object name="ipMask" objId="12">0.0.0.0</object>
+            <object name="ipProtocolType" objId="13">0x00</object>
+            <object name="ipProtocolTypeMask" objId="14">0x00</object>
+            <object name="ipTOSField" objId="15">0x00</object>
+            <object name="ipTOSFieldMask" objId="16">0x00</object>
+            <object name="tcpUdpPortNb" objId="17">0x0000</object>
+            <object name="cpUdpPortNbMask" objId="18">0x0000</object>
+            <object name="tcpUdpPortNb" objId="19">0x0000</object>
+            <object name="tcpUdpPortNbMask" objId="20">0x0000</object>
+            <object name="filterSitQueueTblEntryNumber" objId="21">1</object>
+            <object name="filterPatternEntryStatus" objId="22">1</object>
+            <object name="filterPatternApplicationTriggerEnable" objId="134">0</object>
+         </entry>
+      </table>
+      <table name="queueTbl">
+         <entry index="0">
+            <object name="trafficQosType" objId="24">0</object>
+            <object name="trafficQosPriorityWeight" objId="25">0</object>
+            <object name="channelId" objId="26">0</object>
+            <object name="defVccVpi" objId="27">0</object>
+            <object name="defVccVci" objId="28">0</object>
+            <object name="defCraAllocation" objId="29">0</object>
+            <object name="rbdcMax" objId="30">0</object>
+            <object name="rbdcTimeoutPeriod" objId="31">0</object>
+            <object name="vbdcMax" objId="32">0</object>
+            <object name="IPSECEnableFlag" objId="33">0</object>
+            <object name="IPSECServerTblEntryNumber" objId="34">1</object>
+            <object name="sitQueueTblEntryStatus" objId="35">1</object>
+            <object name="vccSource" objId="61">0</object>
+            <object name="ipCompEnableFlag" objId="63">0</object>
+            <object name="ipCompThreshold" objId="65">256</object>
+            <object name="defPid" objId="75">0</object>
+            <object name="tbfR1" objId="76">0</object>
+            <object name="tbfR2" objId="77">0</object>
+            <object name="tbfBufferSize" objId="78">0</object>
+            <object name="queueMaxBufferSize" objId="79">0</object>
+            <object name="queuePktTimeout" objId="80">0</object>
+            <object name="dscpMarkingEnable" objId="81">0</object>
+            <object name="markedDscpValue" objId="82">0</object>
+         </entry>
+      </table>
+      <table name="ipSecTbl">
+      </table>
+      <table name="routeTbl">
+      </table>
+      <table name="ipsecTunnelTable">
+      </table>
+      <table name="ipSecV2Tbl">
+      </table>
+      <table name="sitEthernetTbl">
+         <entry index="0">
+            <object name="sitEthernetIfIpAddr" objId="116">172.15.9.1</object>
+            <object name="sitEthernetIfIpMask" objId="117">255.255.255.0</object>
+         </entry>
+         <entry index="1">
+            <object name="sitEthernetIfIpAddr" objId="116">10.10.10.10</object>
+            <object name="sitEthernetIfIpMask" objId="117">255.255.255.0</object>
+         </entry>
+         <entry index="2">
+            <object name="sitEthernetIfIpAddr" objId="116">10.10.10.10</object>
+            <object name="sitEthernetIfIpMask" objId="117">255.255.255.0</object>
+         </entry>
+         <entry index="3">
+            <object name="sitEthernetIfIpAddr" objId="116">10.10.10.10</object>
+            <object name="sitEthernetIfIpMask" objId="117">255.255.255.0</object>
+         </entry>
+      </table>
+      <table name="natTcpRedirectTbl">
+         <entry index="0">
+            <object name="natTcpRedirectAddr" objId="127">127.0.0.1</object>
+            <object name="natTcpRedirectLocalPort" objId="128">0</object>
+            <object name="natTcpRedirectGlobalPort" objId="129">0</object>
+         </entry>
+         <entry index="1">
+            <object name="natTcpRedirectAddr" objId="127">127.0.0.1</object>
+            <object name="natTcpRedirectLocalPort" objId="128">0</object>
+            <object name="natTcpRedirectGlobalPort" objId="129">0</object>
+         </entry>
+         <entry index="2">
+            <object name="natTcpRedirectAddr" objId="127">127.0.0.1</object>
+            <object name="natTcpRedirectLocalPort" objId="128">0</object>
+            <object name="natTcpRedirectGlobalPort" objId="129">0</object>
+         </entry>
+         <entry index="3">
+            <object name="natTcpRedirectAddr" objId="127">127.0.0.1</object>
+            <object name="natTcpRedirectLocalPort" objId="128">0</object>
+            <object name="natTcpRedirectGlobalPort" objId="129">0</object>
+         </entry>
+         <entry index="4">
+            <object name="natTcpRedirectAddr" objId="127">127.0.0.1</object>
+            <object name="natTcpRedirectLocalPort" objId="128">0</object>
+            <object name="natTcpRedirectGlobalPort" objId="129">0</object>
+         </entry>
+         <entry index="5">
+            <object name="natTcpRedirectAddr" objId="127">127.0.0.1</object>
+            <object name="natTcpRedirectLocalPort" objId="128">0</object>
+            <object name="natTcpRedirectGlobalPort" objId="129">0</object>
+         </entry>
+         <entry index="6">
+            <object name="natTcpRedirectAddr" objId="127">127.0.0.1</object>
+            <object name="natTcpRedirectLocalPort" objId="128">0</object>
+            <object name="natTcpRedirectGlobalPort" objId="129">0</object>
+         </entry>
+         <entry index="7">
+            <object name="natTcpRedirectAddr" objId="127">127.0.0.1</object>
+            <object name="natTcpRedirectLocalPort" objId="128">0</object>
+            <object name="natTcpRedirectGlobalPort" objId="129">0</object>
+         </entry>
+         <entry index="8">
+            <object name="natTcpRedirectAddr" objId="127">127.0.0.1</object>
+            <object name="natTcpRedirectLocalPort" objId="128">0</object>
+            <object name="natTcpRedirectGlobalPort" objId="129">0</object>
+         </entry>
+         <entry index="9">
+            <object name="natTcpRedirectAddr" objId="127">127.0.0.1</object>
+            <object name="natTcpRedirectLocalPort" objId="128">0</object>
+            <object name="natTcpRedirectGlobalPort" objId="129">0</object>
+         </entry>
+         <entry index="10">
+            <object name="natTcpRedirectAddr" objId="127">127.0.0.1</object>
+            <object name="natTcpRedirectLocalPort" objId="128">0</object>
+            <object name="natTcpRedirectGlobalPort" objId="129">0</object>
+         </entry>
+         <entry index="11">
+            <object name="natTcpRedirectAddr" objId="127">127.0.0.1</object>
+            <object name="natTcpRedirectLocalPort" objId="128">0</object>
+            <object name="natTcpRedirectGlobalPort" objId="129">0</object>
+         </entry>
+         <entry index="12">
+            <object name="natTcpRedirectAddr" objId="127">127.0.0.1</object>
+            <object name="natTcpRedirectLocalPort" objId="128">0</object>
+            <object name="natTcpRedirectGlobalPort" objId="129">0</object>
+         </entry>
+         <entry index="13">
+            <object name="natTcpRedirectAddr" objId="127">127.0.0.1</object>
+            <object name="natTcpRedirectLocalPort" objId="128">0</object>
+            <object name="natTcpRedirectGlobalPort" objId="129">0</object>
+         </entry>
+         <entry index="14">
+            <object name="natTcpRedirectAddr" objId="127">127.0.0.1</object>
+            <object name="natTcpRedirectLocalPort" objId="128">0</object>
+            <object name="natTcpRedirectGlobalPort" objId="129">0</object>
+         </entry>
+         <entry index="15">
+            <object name="natTcpRedirectAddr" objId="127">127.0.0.1</object>
+            <object name="natTcpRedirectLocalPort" objId="128">0</object>
+            <object name="natTcpRedirectGlobalPort" objId="129">0</object>
+         </entry>
+         <entry index="16">
+            <object name="natTcpRedirectAddr" objId="127">127.0.0.1</object>
+            <object name="natTcpRedirectLocalPort" objId="128">0</object>
+            <object name="natTcpRedirectGlobalPort" objId="129">0</object>
+         </entry>
+         <entry index="17">
+            <object name="natTcpRedirectAddr" objId="127">127.0.0.1</object>
+            <object name="natTcpRedirectLocalPort" objId="128">0</object>
+            <object name="natTcpRedirectGlobalPort" objId="129">0</object>
+         </entry>
+         <entry index="18">
+            <object name="natTcpRedirectAddr" objId="127">127.0.0.1</object>
+            <object name="natTcpRedirectLocalPort" objId="128">0</object>
+            <object name="natTcpRedirectGlobalPort" objId="129">0</object>
+         </entry>
+         <entry index="19">
+            <object name="natTcpRedirectAddr" objId="127">127.0.0.1</object>
+            <object name="natTcpRedirectLocalPort" objId="128">0</object>
+            <object name="natTcpRedirectGlobalPort" objId="129">0</object>
+         </entry>
+      </table>
+      <table name="natUdpRedirectTbl">
+         <entry index="0">
+            <object name="natUdpRedirectAddr" objId="130">127.0.0.1</object>
+            <object name="natUdpRedirectLocalPort" objId="131">0</object>
+            <object name="natUdpRedirectGlobalPort" objId="132">0</object>
+         </entry>
+         <entry index="1">
+            <object name="natUdpRedirectAddr" objId="130">127.0.0.1</object>
+            <object name="natUdpRedirectLocalPort" objId="131">0</object>
+            <object name="natUdpRedirectGlobalPort" objId="132">0</object>
+         </entry>
+         <entry index="2">
+            <object name="natUdpRedirectAddr" objId="130">127.0.0.1</object>
+            <object name="natUdpRedirectLocalPort" objId="131">0</object>
+            <object name="natUdpRedirectGlobalPort" objId="132">0</object>
+         </entry>
+         <entry index="3">
+            <object name="natUdpRedirectAddr" objId="130">127.0.0.1</object>
+            <object name="natUdpRedirectLocalPort" objId="131">0</object>
+            <object name="natUdpRedirectGlobalPort" objId="132">0</object>
+         </entry>
+         <entry index="4">
+            <object name="natUdpRedirectAddr" objId="130">127.0.0.1</object>
+            <object name="natUdpRedirectLocalPort" objId="131">0</object>
+            <object name="natUdpRedirectGlobalPort" objId="132">0</object>
+         </entry>
+         <entry index="5">
+            <object name="natUdpRedirectAddr" objId="130">127.0.0.1</object>
+            <object name="natUdpRedirectLocalPort" objId="131">0</object>
+            <object name="natUdpRedirectGlobalPort" objId="132">0</object>
+         </entry>
+         <entry index="6">
+            <object name="natUdpRedirectAddr" objId="130">127.0.0.1</object>
+            <object name="natUdpRedirectLocalPort" objId="131">0</object>
+            <object name="natUdpRedirectGlobalPort" objId="132">0</object>
+         </entry>
+         <entry index="7">
+            <object name="natUdpRedirectAddr" objId="130">127.0.0.1</object>
+            <object name="natUdpRedirectLocalPort" objId="131">0</object>
+            <object name="natUdpRedirectGlobalPort" objId="132">0</object>
+         </entry>
+         <entry index="8">
+            <object name="natUdpRedirectAddr" objId="130">127.0.0.1</object>
+            <object name="natUdpRedirectLocalPort" objId="131">0</object>
+            <object name="natUdpRedirectGlobalPort" objId="132">0</object>
+         </entry>
+         <entry index="9">
+            <object name="natUdpRedirectAddr" objId="130">127.0.0.1</object>
+            <object name="natUdpRedirectLocalPort" objId="131">0</object>
+            <object name="natUdpRedirectGlobalPort" objId="132">0</object>
+         </entry>
+         <entry index="10">
+            <object name="natUdpRedirectAddr" objId="130">127.0.0.1</object>
+            <object name="natUdpRedirectLocalPort" objId="131">0</object>
+            <object name="natUdpRedirectGlobalPort" objId="132">0</object>
+         </entry>
+         <entry index="11">
+            <object name="natUdpRedirectAddr" objId="130">127.0.0.1</object>
+            <object name="natUdpRedirectLocalPort" objId="131">0</object>
+            <object name="natUdpRedirectGlobalPort" objId="132">0</object>
+         </entry>
+         <entry index="12">
+            <object name="natUdpRedirectAddr" objId="130">127.0.0.1</object>
+            <object name="natUdpRedirectLocalPort" objId="131">0</object>
+            <object name="natUdpRedirectGlobalPort" objId="132">0</object>
+         </entry>
+         <entry index="13">
+            <object name="natUdpRedirectAddr" objId="130">127.0.0.1</object>
+            <object name="natUdpRedirectLocalPort" objId="131">0</object>
+            <object name="natUdpRedirectGlobalPort" objId="132">0</object>
+         </entry>
+         <entry index="14">
+            <object name="natUdpRedirectAddr" objId="130">127.0.0.1</object>
+            <object name="natUdpRedirectLocalPort" objId="131">0</object>
+            <object name="natUdpRedirectGlobalPort" objId="132">0</object>
+         </entry>
+         <entry index="15">
+            <object name="natUdpRedirectAddr" objId="130">127.0.0.1</object>
+            <object name="natUdpRedirectLocalPort" objId="131">0</object>
+            <object name="natUdpRedirectGlobalPort" objId="132">0</object>
+         </entry>
+         <entry index="16">
+            <object name="natUdpRedirectAddr" objId="130">127.0.0.1</object>
+            <object name="natUdpRedirectLocalPort" objId="131">0</object>
+            <object name="natUdpRedirectGlobalPort" objId="132">0</object>
+         </entry>
+         <entry index="17">
+            <object name="natUdpRedirectAddr" objId="130">127.0.0.1</object>
+            <object name="natUdpRedirectLocalPort" objId="131">0</object>
+            <object name="natUdpRedirectGlobalPort" objId="132">0</object>
+         </entry>
+         <entry index="18">
+            <object name="natUdpRedirectAddr" objId="130">127.0.0.1</object>
+            <object name="natUdpRedirectLocalPort" objId="131">0</object>
+            <object name="natUdpRedirectGlobalPort" objId="132">0</object>
+         </entry>
+         <entry index="19">
+            <object name="natUdpRedirectAddr" objId="130">127.0.0.1</object>
+            <object name="natUdpRedirectLocalPort" objId="131">0</object>
+            <object name="natUdpRedirectGlobalPort" objId="132">0</object>
+         </entry>
+      </table>
+   </group>
+   <group name="satelliteFLConfGrp" grpId="2">
+      <object name="AcqMode" objId="0">0</object>
+      <object name="NetworkId" objId="1">65500</object>
+      <object name="PopId" objId="2">257</object>
+      <object name="defInteractiveNetId" objId="3">4700</object>
+      <object name="defFrequency" objId="4">19770000</object>
+      <object name="defSymbolRate" objId="5">1047620</object>
+      <object name="defCodingRate" objId="6">0</object>
+      <object name="defPolarization" objId="7">0</object>
+      <object name="defOrbitalPosition" objId="8">192</object>
+      <object name="defSuperFrameId" objId="9">0</object>
+      <object name="defHubGatewayId" objId="10">0</object>
+      <object name="defFLSatId" objId="11">9</object>
+      <object name="compositionTables" objId="12">820</object>
+      <object name="specificTables" objId="13">832</object>
+      <object name="TIMTables" objId="14">831</object>
+      <object name="PCRPacket" objId="15">5632</object>
+      <object name="broadcastIpTraffic" objId="16">941</object>
+      <object name="unicastIpTraffic" objId="17">930</object>
+      <object name="MMT" objId="18">920</object>
+      <object name="meshTrafficPid" objId="19">0</object>
+      <object name="numMeshTrafficVcc" objId="20">0</object>
+      <object name="flCtlMgmPid" objId="23">6000</object>
+      <object name="flCtlMgmGrpId" objId="24">3</object>
+      <object name="flCtlMgmPort" objId="25">1500</object>
+      <object name="flCtlMgmTstModeFrq" objId="26">0</object>
+      <object name="flCtlMgmTstModeCodeRate" objId="27">0</object>
+      <object name="rfcmEnableFlag" objId="28">0</object>
+      <object name="ebnoInThreshold" objId="29">6.000000</object>
+      <object name="ebnoOutThreshold" objId="30">8.000000</object>
+      <object name="NetworkIdB" objId="31">65500</object>
+      <object name="PopIdB" objId="32">257</object>
+      <object name="defInteractiveNetIdB" objId="33">4700</object>
+      <object name="defFrequencyB" objId="34">19770000</object>
+      <object name="defSymbolRateB" objId="35">1047620</object>
+      <object name="defCodingRateB" objId="36">0</object>
+      <object name="defPolarizationB" objId="37">0</object>
+      <object name="maxSwitchTime" objId="38">2</object>
+      <object name="meshMfrxpPid" objId="39">950</object>
+      <object name="meshRsdPid" objId="40">951</object>
+      <object name="meshFtxpPid" objId="41">952</object>
+      <object name="DefMcastMapNbTblEntry" objId="42">32</object>
+      <object name="FLAcqStartMode" objId="46">0</object>
+      <object name="meshTunerAGCFlag" objId="47">1</object>
+      <object name="meshTunerDefGain" objId="48">0x002e0000</object>
+      <object name="defMmtAutoJoinFlag" objId="49">0</object>
+      <object name="defAcmFlag" objId="50">1</object>
+      <object name="defAcmFlagB" objId="51">1</object>
+      <object name="patPid" objId="52">0</object>
+      <object name="nitPid" objId="53">16</object>
+      <object name="GSEEnableFlag" objId="54">0</object>
+      <table name="meshVpiVciTbl">
+         <entry index="0">
+            <object name="vpi" objId="21">0</object>
+            <object name="vci" objId="22">0</object>
+         </entry>
+         <entry index="1">
+            <object name="vpi" objId="21">0</object>
+            <object name="vci" objId="22">0</object>
+         </entry>
+      </table>
+      <table name="DefMcastTbl">
+         <entry index="0">
+            <object name="DefMcastMapIp" objId="43">230.3.3.3</object>
+            <object name="DefMcastMapPid" objId="44">5000</object>
+            <object name="DefMcastMapTblStatus" objId="45">1</object>
+         </entry>
+      </table>
+   </group>
+   <group name="satelliteRLConfGrp" grpId="3">
+      <object name="autoAcquisition" objId="0">1</object>
+      <object name="freqCompensation" objId="1">1</object>
+      <object name="freqCorrection" objId="2">0</object>
+      <object name="autoOduTxEnable" objId="3">0</object>
+      <object name="defRLSatelliteId" objId="4">9</object>
+      <object name="calibrationDelay" objId="5">0</object>
+      <object name="defIfPowerLevel" objId="12">-34</object>
+      <object name="ULPCAlgorithmEnabled" objId="13">1</object>
+      <object name="targetEbNo" objId="14">130</object>
+      <object name="capReqUnitsInKbps" objId="15">2</object>
+      <object name="capReqAvgSlidingWindow" objId="16">0</object>
+      <object name="capReqVbdcSlidingWindow" objId="17">0</object>
+      <object name="capReqTurboVbdc" objId="18">0</object>
+      <object name="capReqScalingFactorFlag" objId="19">1</object>
+      <object name="rlMcastEnabledFlag" objId="20">0</object>
+      <object name="rlMcastIpAddr" objId="21">0.0.0.0</object>
+      <object name="rlMcastMaskAddr" objId="22">255.255.255.255</object>
+      <object name="rlRfcmFlag" objId="23">0</object>
+      <object name="progLogonAlgorithmEnabled" objId="24">0</object>
+      <object name="pcrInThreshold" objId="25">32</object>
+      <object name="pcrOutThreshold" objId="26">160</object>
+      <object name="addTxFrequencyOffset" objId="27">0</object>
+      <object name="lucSearchWindow" objId="28">3</object>
+      <object name="maxCscLogonIfPowerLevel" objId="29">0</object>
+      <object name="rlss1_5_Compatibility" objId="30">0</object>
+      <object name="txExtraOffsetHz" objId="31">0</object>
+      <table name="rlinkCscTbl">
+         <entry index="0">
+            <object name="randomInitialPeriod" objId="6">255</object>
+            <object name="replyTimeoutPeriod" objId="7">70</object>
+            <object name="minimumRetryPeriod" objId="8">70</object>
+            <object name="resendRandomPeriod" objId="9">32</object>
+            <object name="maxCSCTries" objId="10">64</object>
+            <object name="maxBackoffTries" objId="11">2</object>
+         </entry>
+         <entry index="1">
+            <object name="randomInitialPeriod" objId="6">0</object>
+            <object name="replyTimeoutPeriod" objId="7">70</object>
+            <object name="minimumRetryPeriod" objId="8">70</object>
+            <object name="resendRandomPeriod" objId="9">32</object>
+            <object name="maxCSCTries" objId="10">5</object>
+            <object name="maxBackoffTries" objId="11">0</object>
+         </entry>
+      </table>
+   </group>
+   <group name="txSafetyShutoffConfGrp" grpId="4">
+      <object name="AGCVarRateThreshold" objId="0">30</object>
+      <object name="AGCIntegrationTime" objId="1">5</object>
+      <object name="consecutiveMissRpliesThresh" objId="2">3</object>
+      <object name="disablePerBetweenRetries" objId="3">64</object>
+      <object name="PCRAbsThreshold" objId="5">226</object>
+      <table name="txMaxRetryTbl">
+         <entry index="0">
+            <object name="maxNbOfRetries" objId="4">0</object>
+         </entry>
+         <entry index="1">
+            <object name="maxNbOfRetries" objId="4">0</object>
+         </entry>
+      </table>
+   </group>
+   <group name="swDwnldFtpServerConfGrp" grpId="5">
+      <object name="swDwnldServerUsername" objId="0">FTP_User</object>
+      <object name="swDwnldPassword" objId="1">TOLEDO</object>
+      <object name="swDwnldServerIPAddr" objId="2">10.10.40.50</object>
+      <object name="swDwnldPath" objId="3">v1177-RCS-r04.03.dev03.b406.sit</object>
+   </group>
+   <group name="mibTrapConfGrp" grpId="6">
+      <object name="generalTrapFlag" objId="0">0</object>
+      <object name="rebootStatusTrapFlag" objId="1">2</object>
+      <object name="nbTrapDest" objId="2">64</object>
+      <table name="trapDestTbl">
+      </table>
+   </group>
+   <group name="mibAccessPolicyConfGrp" grpId="7">
+      <object name="MIBAccessPolicyUsageFlag" objId="0">0</object>
+      <object name="mibPrivateEnterpriseNumber" objId="1">2696</object>
+      <object name="numberOfAccessPolicies" objId="2">80</object>
+      <object name="numberOfAccessView" objId="8">110</object>
+      <object name="MIBPrivateAccessPolicyUsageFlag" objId="13">0</object>
+      <table name="anmpAccessPolicyTbl">
+      </table>
+      <table name="snmpViewTbl">
+      </table>
+   </group>
+   <group name="staticUsrUsernameGrp" grpId="8">
+      <object name="staticUsrUsername" objId="0">StaticUser</object>
+      <object name="sitRadiusEnable" objId="1">0</object>
+   </group>
+   <group name="dhcpSrvGrp" grpId="45">
+      <object name="dhcpSrvGlbOptMaxLeaseTime" objId="0">86400</object>
+      <object name="dhcpSrvGlbOptDflLeaseTime" objId="1">7200</object>
+      <object name="dhcpSrvGlbOptSubnetMask" objId="2"></object>
+      <object name="dhcpSrvGlbOptRouters" objId="3"></object>
+      <object name="dhcpSrvGlbOptDnsServers" objId="4">8.8.8.8</object>
+      <object name="dhcpSrvGlbOptDomainName" objId="5"></object>
+      <object name="dhcpHubServerIpAddr" objId="25">192.168.253.121</object>
+      <object name="dhcpHubServer2IpAddr" objId="26">0.0.0.0</object>
+      <table name="dhcpServerSubnets">
+         <entry index="0">
+            <object name="dhcpSrvSubnetsEnableFlag" objId="6">1</object>
+            <object name="dhcpSrvSubnetsSubnet" objId="7">172.18.2.0</object>
+            <object name="dhcpSrvSubnetsNetMask" objId="8">255.255.255.0</object>
+            <object name="dhcpSrvSubnetsOptMaxLeaseTime" objId="9"></object>
+            <object name="dhcpSrvSubnetsOptDflLeaseTime" objId="10"></object>
+            <object name="dhcpSrvSubnetsOptSubnetMask" objId="11">255.255.255.0</object>
+            <object name="dhcpSrvSubnetsOptRouters" objId="12">172.18.2.1</object>
+            <object name="dhcpSrvSubnetsOptDnsServers" objId="13"></object>
+            <object name="dhcpSrvSubnetsOptDomainName" objId="14"></object>
+            <object name="dhcpSrvSubnetsIpRanges" objId="15">172.18.2.5 172.18.2.50</object>
+         </entry>
+      </table>
+      <table name="dhcpServerHosts">
+      </table>
+   </group>
+   <group name="pepGrp" grpId="47">
+      <object name="pepUseHttpPreFetching" objId="0">1</object>
+      <object name="pepxUseDsb" objId="1">0</object>
+      <object name="pepCompressionLevel" objId="2">0</object>
+      <object name="pepxTcpAccActiveProfile" objId="3">0</object>
+      <object name="pepSpbTcpAccMode" objId="16">0</object>
+      <object name="pepSpbFpAfr" objId="17">0</object>
+      <object name="pepSpbFailSafeEnableFlag" objId="18">1</object>
+      <object name="pepSpbFailSafeSamplingRate" objId="19">10</object>
+      <object name="pepSpbFailSafeInactivityCnt" objId="20">2</object>
+      <object name="pepSpbTcpFw2Timer" objId="21">0</object>
+      <object name="pepxTcpAccConnProfile" objId="22">0</object>
+      <object name="pepxTcpAccMaxRtt" objId="23">1500</object>
+      <object name="pepxTcpAccMaxUploadRate" objId="24">2048</object>
+      <object name="pepxTcpAccMaxDwlRate" objId="25">20480</object>
+      <object name="pepxTcpAccFastStartFlag" objId="26">0</object>
+      <object name="pepxDnsNameserver" objId="27">4.2.2.2</object>
+      <object name="pepCompressionEnableFlag" objId="28">0</object>
+      <object name="pepConnectionMax" objId="29">1024</object>
+      <object name="pepCompressedConnectionMax" objId="30">1024</object>
+      <object name="pepServerIpAddr" objId="31">192.168.16.17</object>
+      <object name="pepServerPort" objId="32">9999</object>
+      <object name="pepBypassNumRules" objId="33">0</object>
+      <table name="AdvanceProfile">
+         <entry index="0">
+            <object name="pepxTcpAccStatus" objId="4">1</object>
+            <object name="pepxTcpAccProfileDescription" objId="5">default</object>
+            <object name="pepxTcpAccSendSpace" objId="6">1300000</object>
+            <object name="pepxTcpAccRecvSpace" objId="7">900000</object>
+            <object name="pepxTcpAccScpsCongCtrl" objId="8">1</object>
+            <object name="pepxTcpAccWmarkApha" objId="9">2</object>
+            <object name="pepxTcpAccWmarkBeta" objId="10">3</object>
+            <object name="pepxTcpAccHeadStart" objId="11">4</object>
+            <object name="pepxTcpAccSSNack" objId="12">1</object>
+            <object name="pepxTcpAccDelayedAck" objId="13">1</object>
+            <object name="pepxTcpAccDelAckTime" objId="14">100</object>
+            <object name="pepxTcpAccTtcp" objId="15">0</object>
+         </entry>
+         <entry index="1">
+            <object name="pepxTcpAccStatus" objId="4">1</object>
+            <object name="pepxTcpAccProfileDescription" objId="5">default</object>
+            <object name="pepxTcpAccSendSpace" objId="6">1300000</object>
+            <object name="pepxTcpAccRecvSpace" objId="7">900000</object>
+            <object name="pepxTcpAccScpsCongCtrl" objId="8">1</object>
+            <object name="pepxTcpAccWmarkApha" objId="9">2</object>
+            <object name="pepxTcpAccWmarkBeta" objId="10">3</object>
+            <object name="pepxTcpAccHeadStart" objId="11">4</object>
+            <object name="pepxTcpAccSSNack" objId="12">1</object>
+            <object name="pepxTcpAccDelayedAck" objId="13">1</object>
+            <object name="pepxTcpAccDelAckTime" objId="14">100</object>
+            <object name="pepxTcpAccTtcp" objId="15">0</object>
+         </entry>
+         <entry index="2">
+            <object name="pepxTcpAccStatus" objId="4">1</object>
+            <object name="pepxTcpAccProfileDescription" objId="5">default</object>
+            <object name="pepxTcpAccSendSpace" objId="6">1300000</object>
+            <object name="pepxTcpAccRecvSpace" objId="7">900000</object>
+            <object name="pepxTcpAccScpsCongCtrl" objId="8">1</object>
+            <object name="pepxTcpAccWmarkApha" objId="9">2</object>
+            <object name="pepxTcpAccWmarkBeta" objId="10">3</object>
+            <object name="pepxTcpAccHeadStart" objId="11">4</object>
+            <object name="pepxTcpAccSSNack" objId="12">1</object>
+            <object name="pepxTcpAccDelayedAck" objId="13">1</object>
+            <object name="pepxTcpAccDelAckTime" objId="14">100</object>
+            <object name="pepxTcpAccTtcp" objId="15">0</object>
+         </entry>
+      </table>
+      <table name="pepBypassTbl">
+         <entry index="0">
+            <object name="pepBypassSrcIpAddr" objId="34">0.0.0.0</object>
+            <object name="pepBypassSrcIpMask" objId="35">0</object>
+            <object name="pepBypassDstIpAddr" objId="36">0.0.0.0</object>
+            <object name="pepBypassDstIpMask" objId="37">0</object>
+            <object name="pepBypassTcpSrcPort" objId="38">0</object>
+            <object name="pepBypassTcpDstPort" objId="39">0</object>
+         </entry>
+         <entry index="1">
+            <object name="pepBypassSrcIpAddr" objId="34">0.0.0.0</object>
+            <object name="pepBypassSrcIpMask" objId="35">0</object>
+            <object name="pepBypassDstIpAddr" objId="36">0.0.0.0</object>
+            <object name="pepBypassDstIpMask" objId="37">0</object>
+            <object name="pepBypassTcpSrcPort" objId="38">0</object>
+            <object name="pepBypassTcpDstPort" objId="39">0</object>
+         </entry>
+         <entry index="2">
+            <object name="pepBypassSrcIpAddr" objId="34">0.0.0.0</object>
+            <object name="pepBypassSrcIpMask" objId="35">0</object>
+            <object name="pepBypassDstIpAddr" objId="36">0.0.0.0</object>
+            <object name="pepBypassDstIpMask" objId="37">0</object>
+            <object name="pepBypassTcpSrcPort" objId="38">0</object>
+            <object name="pepBypassTcpDstPort" objId="39">0</object>
+         </entry>
+         <entry index="3">
+            <object name="pepBypassSrcIpAddr" objId="34">0.0.0.0</object>
+            <object name="pepBypassSrcIpMask" objId="35">0</object>
+            <object name="pepBypassDstIpAddr" objId="36">0.0.0.0</object>
+            <object name="pepBypassDstIpMask" objId="37">0</object>
+            <object name="pepBypassTcpSrcPort" objId="38">0</object>
+            <object name="pepBypassTcpDstPort" objId="39">0</object>
+         </entry>
+         <entry index="4">
+            <object name="pepBypassSrcIpAddr" objId="34">0.0.0.0</object>
+            <object name="pepBypassSrcIpMask" objId="35">0</object>
+            <object name="pepBypassDstIpAddr" objId="36">0.0.0.0</object>
+            <object name="pepBypassDstIpMask" objId="37">0</object>
+            <object name="pepBypassTcpSrcPort" objId="38">0</object>
+            <object name="pepBypassTcpDstPort" objId="39">0</object>
+         </entry>
+         <entry index="5">
+            <object name="pepBypassSrcIpAddr" objId="34">0.0.0.0</object>
+            <object name="pepBypassSrcIpMask" objId="35">0</object>
+            <object name="pepBypassDstIpAddr" objId="36">0.0.0.0</object>
+            <object name="pepBypassDstIpMask" objId="37">0</object>
+            <object name="pepBypassTcpSrcPort" objId="38">0</object>
+            <object name="pepBypassTcpDstPort" objId="39">0</object>
+         </entry>
+         <entry index="6">
+            <object name="pepBypassSrcIpAddr" objId="34">0.0.0.0</object>
+            <object name="pepBypassSrcIpMask" objId="35">0</object>
+            <object name="pepBypassDstIpAddr" objId="36">0.0.0.0</object>
+            <object name="pepBypassDstIpMask" objId="37">0</object>
+            <object name="pepBypassTcpSrcPort" objId="38">0</object>
+            <object name="pepBypassTcpDstPort" objId="39">0</object>
+         </entry>
+         <entry index="7">
+            <object name="pepBypassSrcIpAddr" objId="34">0.0.0.0</object>
+            <object name="pepBypassSrcIpMask" objId="35">0</object>
+            <object name="pepBypassDstIpAddr" objId="36">0.0.0.0</object>
+            <object name="pepBypassDstIpMask" objId="37">0</object>
+            <object name="pepBypassTcpSrcPort" objId="38">0</object>
+            <object name="pepBypassTcpDstPort" objId="39">0</object>
+         </entry>
+         <entry index="8">
+            <object name="pepBypassSrcIpAddr" objId="34">0.0.0.0</object>
+            <object name="pepBypassSrcIpMask" objId="35">0</object>
+            <object name="pepBypassDstIpAddr" objId="36">0.0.0.0</object>
+            <object name="pepBypassDstIpMask" objId="37">0</object>
+            <object name="pepBypassTcpSrcPort" objId="38">0</object>
+            <object name="pepBypassTcpDstPort" objId="39">0</object>
+         </entry>
+         <entry index="9">
+            <object name="pepBypassSrcIpAddr" objId="34">0.0.0.0</object>
+            <object name="pepBypassSrcIpMask" objId="35">0</object>
+            <object name="pepBypassDstIpAddr" objId="36">0.0.0.0</object>
+            <object name="pepBypassDstIpMask" objId="37">0</object>
+            <object name="pepBypassTcpSrcPort" objId="38">0</object>
+            <object name="pepBypassTcpDstPort" objId="39">0</object>
+         </entry>
+         <entry index="10">
+            <object name="pepBypassSrcIpAddr" objId="34">0.0.0.0</object>
+            <object name="pepBypassSrcIpMask" objId="35">0</object>
+            <object name="pepBypassDstIpAddr" objId="36">0.0.0.0</object>
+            <object name="pepBypassDstIpMask" objId="37">0</object>
+            <object name="pepBypassTcpSrcPort" objId="38">0</object>
+            <object name="pepBypassTcpDstPort" objId="39">0</object>
+         </entry>
+         <entry index="11">
+            <object name="pepBypassSrcIpAddr" objId="34">0.0.0.0</object>
+            <object name="pepBypassSrcIpMask" objId="35">0</object>
+            <object name="pepBypassDstIpAddr" objId="36">0.0.0.0</object>
+            <object name="pepBypassDstIpMask" objId="37">0</object>
+            <object name="pepBypassTcpSrcPort" objId="38">0</object>
+            <object name="pepBypassTcpDstPort" objId="39">0</object>
+         </entry>
+         <entry index="12">
+            <object name="pepBypassSrcIpAddr" objId="34">0.0.0.0</object>
+            <object name="pepBypassSrcIpMask" objId="35">0</object>
+            <object name="pepBypassDstIpAddr" objId="36">0.0.0.0</object>
+            <object name="pepBypassDstIpMask" objId="37">0</object>
+            <object name="pepBypassTcpSrcPort" objId="38">0</object>
+            <object name="pepBypassTcpDstPort" objId="39">0</object>
+         </entry>
+         <entry index="13">
+            <object name="pepBypassSrcIpAddr" objId="34">0.0.0.0</object>
+            <object name="pepBypassSrcIpMask" objId="35">0</object>
+            <object name="pepBypassDstIpAddr" objId="36">0.0.0.0</object>
+            <object name="pepBypassDstIpMask" objId="37">0</object>
+            <object name="pepBypassTcpSrcPort" objId="38">0</object>
+            <object name="pepBypassTcpDstPort" objId="39">0</object>
+         </entry>
+         <entry index="14">
+            <object name="pepBypassSrcIpAddr" objId="34">0.0.0.0</object>
+            <object name="pepBypassSrcIpMask" objId="35">0</object>
+            <object name="pepBypassDstIpAddr" objId="36">0.0.0.0</object>
+            <object name="pepBypassDstIpMask" objId="37">0</object>
+            <object name="pepBypassTcpSrcPort" objId="38">0</object>
+            <object name="pepBypassTcpDstPort" objId="39">0</object>
+         </entry>
+         <entry index="15">
+            <object name="pepBypassSrcIpAddr" objId="34">0.0.0.0</object>
+            <object name="pepBypassSrcIpMask" objId="35">0</object>
+            <object name="pepBypassDstIpAddr" objId="36">0.0.0.0</object>
+            <object name="pepBypassDstIpMask" objId="37">0</object>
+            <object name="pepBypassTcpSrcPort" objId="38">0</object>
+            <object name="pepBypassTcpDstPort" objId="39">0</object>
+         </entry>
+      </table>
+   </group>
+   <group name="vlanGrp" grpId="50">
+      <object name="vlanRcstGreTunnelIpAddr" objId="0">0.0.0.0</object>
+      <table name="vlanTunnelMapTable">
+      </table>
+   </group>
+   <group name="acmGrp" grpId="51">
+      <object name="acmCniThresholdOffsetMargin" objId="3">6</object>
+      <object name="acmCniThresholdOffsetHysteresis" objId="4">2</object>
+      <table name="acmModcodThresholdTable">
+      </table>
+   </group>
+   <group name="satelliteInfoGrp" grpId="54">
+      <object name="satelliteLNBPower" objId="11">1</object>
+      <object name="satelliteLNBVolt" objId="12">18</object>
+      <object name="satelliteIpointEnable" objId="13">3</object>
+      <object name="satelliteEthernetIfOpenAmIpAddr" objId="14">10.10.10.10</object>
+      <object name="SatelliteOPENAMIPPort" objId="15">9750</object>
+      <object name="activeSatellite" objId="16">1</object>
+      <object name="SatelliteAMIPLongitude" objId="18">9750</object>
+      <object name="SatelliteAMIPWest" objId="19">0</object>
+      <object name="SatelliteAMIPPolSkew" objId="20">9750</object>
+      <object name="satelliteRxPolarization" objId="21">0</object>
+      <object name="satelliteTxPolarization" objId="22">1</object>
+      <object name="SatelliteCenterFreq" objId="23">11450000</object>
+      <object name="SatelliteBandwidth" objId="24">300</object>
+      <object name="SatelliteWaitingTime" objId="25">30</object>
+      <object name="satelliteMobilityFlag" objId="26">0</object>
+      <object name="satelliteMobilityFileUrl" objId="27"></object>
+      <object name="satelliteMobilityIntervalCheckURL" objId="28">600</object>
+      <object name="satelliteMobilityIntervalCheckGPS" objId="29">60</object>
+      <object name="satelliteMobilityPowerTreshold" objId="30">0</object>
+      <object name="SatelliteWaitingTimeFloat" objId="31">2.000000</object>
+      <object name="OpenAmipVersion" objId="32">0</object>
+      <table name="satelliteTbl">
+      </table>
+   </group>
+   <group name="asatTriggersGrp" grpId="55">
+      <object name="asatTriggersEnable" objId="0">1</object>
+      <object name="asatTriggers" objId="1">0</object>
+      <object name="extraBwAssignment" objId="2">0</object>
+      <object name="requestUpperLimitPercent" objId="3">150</object>
+      <object name="requestLowerLimitPercent" objId="4">50</object>
+      <object name="scpcDataRateThresholdTrigger" objId="5">60</object>
+      <object name="scpcRequestDataRateOverhead" objId="6">115</object>
+      <object name="rcsDataRateThresholdTrigger" objId="7">40</object>
+      <object name="avgIncomingDataRateInterval" objId="8">3</object>
+      <object name="noResponseTimeout" objId="9">3</object>
+      <object name="waveformSwitchTimeout" objId="10">3</object>
+      <object name="maxAsatBitRate" objId="11">4000</object>
+      <object name="bmScpcThreshold" objId="13">0</object>
+      <object name="sendModRequestDelaySec" objId="14">5</object>
+      <object name="nmsMissingTrapResponseTimeout" objId="15">30</object>
+      <table name="asatTriggersTbl">
+         <entry index="0">
+            <object name="logonCra" objId="12">64000</object>
+         </entry>
+         <entry index="1">
+            <object name="logonCra" objId="12">0</object>
+         </entry>
+      </table>
+   </group>
+   <group name="asiGrp" grpId="56">
+      <table name="asiRxUTrafficPidTable">
+      </table>
+   </group>
+   <group name="asi2Grp" grpId="57">
+      <table name="asi2RxUTrafficPidTable">
+      </table>
+   </group>
+</database>

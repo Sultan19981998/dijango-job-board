@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sitemaps',
     'bootstrap5',
     'django_filters',
     'widget_tweaks',
@@ -136,8 +137,8 @@ MEDIA_ROOT = BASE_DIR / "media"
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-EMAIL_HOST = os.environ.get('EMAIL_HOST')
-EMAIL_PORT = int(os.environ.get('EMAIL_PORT', 587))  # ← هنا أضفنا القيمة الافتراضية
-EMAIL_USE_TLS = os.environ.get('EMAIL_USE_TLS', 'True') == 'True'
-EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
-EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
+EMAIL_HOST = os.environ.get( 'EMAIL_HOST' )
+EMAIL_PORT = int( os.environ.get( 'EMAIL_PORT', 587 ) )  # ← هنا أضفنا القيمة الافتراضية
+EMAIL_USE_TLS = os.environ.get( 'EMAIL_USE_TLS', 'True' ) == 'True'
+EMAIL_HOST_USER = os.environ.get( 'EMAIL_HOST_USER' )
+EMAIL_HOST_PASSWORD = os.environ.get( 'EMAIL_HOST_PASSWORD' )

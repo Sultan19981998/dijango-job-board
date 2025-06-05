@@ -30,7 +30,7 @@ SECRET_KEY = 'django-insecure-_agwd25&f3#mfx!*#2hs0#r6usobc0_t-riug1frrbsi%p8umz
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['dijango-job-board-1.onrender.com']
+ALLOWED_HOSTS = ['django-job-board.onrender.com']
 STATIC_ROOT = os.path.join( BASE_DIR, 'staticfiles' )
 SECURE_BROWSER_XSS_FILTER = True
 SECURE_CONTENT_TYPE_NOSNIFF = True

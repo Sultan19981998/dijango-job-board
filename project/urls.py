@@ -20,9 +20,7 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
 from django.contrib.sitemaps.views import sitemap
-from django.contrib.sitemaps import Sitemap
-from job.models import Job
-from job import views  # ✅ إضافة هذا السطر
+from job.sitemaps import JobSitemap
 
 urlpatterns = [
     path( 'accounts/', include( 'django.contrib.auth.urls' ) ),
@@ -34,24 +32,14 @@ urlpatterns = [
 
 ]
 
-urlpatterns += static( settings.STATIC_URL, document_root=settings.STATIC_ROOT )
-urlpatterns += static( settings.MEDIA_URL, document_root=settings.MEDIA_ROOT )
-
-class JobSitemap(Sitemap):
-    changefreq = "daily"
-    priority = 0.9
-
-    def items(self):
-        return Job.objects.all()
-
-    def location(self, item):
-        return f"/jobs/{item.id}/"  # ← عدله إذا رابط عرض الوظائف يختلف
-
-sitemaps_dict = {
+sitemaps = {
     'jobs': JobSitemap,
 }
 
 urlpatterns += [
-    path('sitemap.xml', sitemap, {'sitemaps': sitemaps_dict}, name='django.contrib.sitemaps.views.sitemap'),
+    path('sitemap.xml', sitemap, {'sitemaps': sitemaps}, name='sitemap'),
 ]
 
+
+urlpatterns += static( settings.STATIC_URL, document_root=settings.STATIC_ROOT )
+urlpatterns += static( settings.MEDIA_URL, document_root=settings.MEDIA_ROOT )

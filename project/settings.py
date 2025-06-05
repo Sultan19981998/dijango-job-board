@@ -142,3 +142,6 @@ EMAIL_PORT = int( os.environ.get( 'EMAIL_PORT', 587 ) )  # ← هنا أضفنا
 EMAIL_USE_TLS = os.environ.get( 'EMAIL_USE_TLS', 'True' ) == 'True'
 EMAIL_HOST_USER = os.environ.get( 'EMAIL_HOST_USER' )
 EMAIL_HOST_PASSWORD = os.environ.get( 'EMAIL_HOST_PASSWORD' )
+
+
+CSRF_TRUSTED_ORIGINS = ['https://django-job-board.onrender.com']

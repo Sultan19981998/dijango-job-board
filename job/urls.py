@@ -14,4 +14,7 @@ urlpatterns = [
 
 
     path( 'api/v2/list/', api.JobListapi.as_view(), name='Job_List_api' ),
-    path( 'api/v2/list/<int:id>', api.JobDetails.as_view(), name='JobDetails' ),]
+    path( 'api/v2/list/<int:id>', api.JobDetails.as_view(), name='JobDetails' ),
+
+
+]

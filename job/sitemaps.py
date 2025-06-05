@@ -8,5 +8,8 @@ class JobSitemap(Sitemap):
     def items(self):
         return Job.objects.all()
 
+    def location(self, obj):
+        return f'/{obj.slug}/'
+
     def lastmod(self, obj):
         return obj.date_at

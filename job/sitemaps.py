@@ -9,4 +9,4 @@ class JobSitemap(Sitemap):
         return Job.objects.all()
 
     def lastmod(self, obj):
-        return obj.updated_at
+        return obj.date_at
